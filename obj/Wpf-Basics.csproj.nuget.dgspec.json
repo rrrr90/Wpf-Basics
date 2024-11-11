@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rby\\source\\repos\\Wpf-Basics\\Wpf-Basics.csproj": {}
+    "C:\\Users\\rby\\Source\\Repos\\rrrr90\\Wpf-Basics\\Wpf-Basics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rby\\source\\repos\\Wpf-Basics\\Wpf-Basics.csproj": {
+    "C:\\Users\\rby\\Source\\Repos\\rrrr90\\Wpf-Basics\\Wpf-Basics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rby\\source\\repos\\Wpf-Basics\\Wpf-Basics.csproj",
+        "projectUniqueName": "C:\\Users\\rby\\Source\\Repos\\rrrr90\\Wpf-Basics\\Wpf-Basics.csproj",
         "projectName": "Wpf-Basics",
-        "projectPath": "C:\\Users\\rby\\source\\repos\\Wpf-Basics\\Wpf-Basics.csproj",
+        "projectPath": "C:\\Users\\rby\\Source\\Repos\\rrrr90\\Wpf-Basics\\Wpf-Basics.csproj",
         "packagesPath": "C:\\Users\\rby\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rby\\source\\repos\\Wpf-Basics\\obj\\",
+        "outputPath": "C:\\Users\\rby\\Source\\Repos\\rrrr90\\Wpf-Basics\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
