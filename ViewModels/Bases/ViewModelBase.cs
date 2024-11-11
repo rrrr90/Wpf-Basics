@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApp1.ViewModels.Bases
+namespace Wpf_Basics.ViewModels.Bases
 {
     class ViewModelBase : ObservableObject
     {
