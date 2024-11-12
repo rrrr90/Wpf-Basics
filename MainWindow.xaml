@@ -17,10 +17,21 @@
                 </StackPanel>
             </StackPanel>
         </DataTemplate>
+        <DataTemplate x:Key="Woman">
+            <StackPanel>
+                <TextBlock Text="{Binding Name}"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding Birthday}" Margin="10 5"/>
+                    <TextBlock Text="{Binding Gender}" Margin="10 5"/>
+                    <TextBlock Text="{Binding School}" Margin="10 5"/>
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
     </Window.Resources>
     <Grid>
         <ListBox ItemsSource="{Binding Students}"
-                 ItemTemplate="{StaticResource Man}">
+                 ItemTemplate="{StaticResource Man}"
+                 ItemTemplateSelector="">
         </ListBox>
     </Grid>
 </Window>
