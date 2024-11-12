@@ -15,10 +15,10 @@ namespace Wpf_Basics.Models
 
         public static List<Student> Students { get; set; } = new List<Student>()
         {
-            new Student{Name="name1", Gender="Gender1", Birthday="Birthday1", School="School1"},
-            new Student{Name="name22", Gender="Gender22", Birthday="Birthday22", School="School22"},
-            new Student{Name="name333", Gender="Gender333", Birthday="Birthday333", School="School333"},
-            new Student{Name="name4444", Gender="Gender4444", Birthday="Birthday4444", School="School4444"}
+            new Student{Name="name1", Gender="남", Birthday="Birthday1", School="School1"},
+            new Student{Name="name22", Gender="여", Birthday="Birthday22", School="School22"},
+            new Student{Name="name333", Gender="남", Birthday="Birthday333", School="School333"},
+            new Student{Name="name4444", Gender="여", Birthday="Birthday4444", School="School4444"}
         };
 
         public Student()

@@ -22,3 +22,4 @@ C:\Users\rby\Source\Repos\rrrr90\Wpf-Basics\obj\Debug\net8.0-windows\refint\Wpf-
 C:\Users\rby\Source\Repos\rrrr90\Wpf-Basics\obj\Debug\net8.0-windows\Wpf-Basics.pdb
 C:\Users\rby\Source\Repos\rrrr90\Wpf-Basics\obj\Debug\net8.0-windows\Wpf-Basics.genruntimeconfig.cache
 C:\Users\rby\Source\Repos\rrrr90\Wpf-Basics\obj\Debug\net8.0-windows\ref\Wpf-Basics.dll
+C:\Users\rby\Source\Repos\rrrr90\Wpf-Basics\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs

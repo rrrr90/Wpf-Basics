@@ -16,7 +16,7 @@ namespace Wpf_Basics.Converter
             Student? student = item as Student;
             FrameworkElement? frameworkElement = container as FrameworkElement;
 
-            return frameworkElement?.FindResource(student?.Gender == "남" ? "Man" : "Women") as DataTemplate;
+            return frameworkElement?.FindResource(student?.Gender == "남" ? "Man" : "Woman") as DataTemplate;
         }
     }
 }
