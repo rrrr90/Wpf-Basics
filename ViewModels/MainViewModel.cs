@@ -9,12 +9,11 @@ namespace Wpf_Basics.ViewModels
 {
     internal class MainViewModel: Bases.ViewModelBase
     {
-        private List<Student> students = default!;
-        public List<Student> Students { get { return students; } set { SetProperty(ref students, value); } }
+        public StudentSheetViewModel StudentSheetViewModel { get; set; }
 
         public MainViewModel()
         {
-            Students = Student.Students;
+            StudentSheetViewModel = new StudentSheetViewModel();
         }
     }
 }
