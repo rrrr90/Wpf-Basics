@@ -21,7 +21,8 @@
                             BorderThickness="5"
                             CornerRadius="10"
                             Background="SkyBlue">
-                        <ContentPresenter/>
+                        <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
                     </Border>
                 </ControlTemplate>
             </Button.Template>
