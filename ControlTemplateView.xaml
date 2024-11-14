@@ -23,6 +23,12 @@
                 </Setter.Value>
             </Setter>
         </Style>
+
+        <ControlTemplate x:Key="CustomComboItem"
+                         TargetType="ComboBoxItem">
+            <TextBlock Text="{Binding Value}"
+                       Foreground="{Binding Brush}"/>
+        </ControlTemplate>
     </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -41,7 +47,13 @@
                   Margin="10"
                   FontSize="30"
                   ItemsSource="{Binding Items}">
-            
+            <ComboBox.ItemContainerStyle>
+                <Style TargetType="{x:Type ComboBoxItem}">
+                    <Setter Property="Template"
+                            Value="{StaticResource CustomComboItem}">
+                    </Setter>
+                </Style>
+            </ComboBox.ItemContainerStyle>
         </ComboBox>
     </Grid>
 </UserControl>
