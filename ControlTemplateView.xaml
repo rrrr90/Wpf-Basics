@@ -6,6 +6,24 @@
              xmlns:local="clr-namespace:Wpf_Basics"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="400">
+    <UserControl.Resources>
+        <Style x:Key="CustomButton"
+               TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border BorderBrush="Blue"
+            BorderThickness="5"
+            CornerRadius="10"
+            Background="SkyBlue">
+                            <ContentPresenter HorizontalAlignment="Center"
+                          VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -13,19 +31,10 @@
         </Grid.RowDefinitions>
         <Button Grid.Row="0"
                 Margin="10"
-                FontSize="30">
+                FontSize="30"
+                Background="Red"
+                Style="{StaticResource CustomButton}">
             Button
-            <Button.Template>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border BorderBrush="Blue"
-                            BorderThickness="5"
-                            CornerRadius="10"
-                            Background="SkyBlue">
-                        <ContentPresenter HorizontalAlignment="Center"
-                                          VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
         </Button>
     </Grid>
 </UserControl>
