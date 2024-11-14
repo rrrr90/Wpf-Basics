@@ -13,11 +13,11 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Border BorderBrush="Blue"
-            BorderThickness="5"
-            CornerRadius="10"
-            Background="SkyBlue">
+                                BorderThickness="5"
+                                CornerRadius="10"
+                                Background="SkyBlue">
                             <ContentPresenter HorizontalAlignment="Center"
-                          VerticalAlignment="Center"/>
+                                              VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
