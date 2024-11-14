@@ -10,10 +10,12 @@ namespace Wpf_Basics.ViewModels
     internal class MainViewModel: Bases.ViewModelBase
     {
         public StudentSheetViewModel StudentSheetViewModel { get; set; }
+        public ControlTemplateViewModel ControlTemplateViewModel { get; set; }
 
         public MainViewModel()
         {
             StudentSheetViewModel = new StudentSheetViewModel();
+            ControlTemplateViewModel = new ControlTemplateViewModel();
         }
     }
 }

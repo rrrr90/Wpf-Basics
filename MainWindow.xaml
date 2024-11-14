@@ -12,12 +12,17 @@
         <DataTemplate DataType="{x:Type vm:StudentSheetViewModel}">
             <local:StudentSheetView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:ControlTemplateViewModel}">
+            <local:ControlTemplateView/>
+        </DataTemplate>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <ContentControl Grid.Column="0"
+                        Content="{Binding ControlTemplateViewModel}"/>
         <ContentControl Grid.Column="1"
                         Content="{Binding StudentSheetViewModel}"/>
     </Grid>
