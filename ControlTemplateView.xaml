@@ -12,10 +12,10 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border BorderBrush="Blue"
+                        <Border BorderBrush="{TemplateBinding BorderBrush}"
                                 BorderThickness="5"
                                 CornerRadius="10"
-                                Background="SkyBlue">
+                                Background="{TemplateBinding Background}">
                             <ContentPresenter HorizontalAlignment="Center"
                                               VerticalAlignment="Center"/>
                         </Border>
@@ -32,7 +32,8 @@
         <Button Grid.Row="0"
                 Margin="10"
                 FontSize="30"
-                Background="Red"
+                Background="Pink"
+                BorderBrush="Red"
                 Style="{StaticResource CustomButton}">
             Button
         </Button>
