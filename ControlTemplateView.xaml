@@ -37,5 +37,11 @@
                 Style="{StaticResource CustomButton}">
             Button
         </Button>
+        <ComboBox Grid.Row="1"
+                  Margin="10"
+                  FontSize="30"
+                  ItemsSource="{Binding Items}">
+            
+        </ComboBox>
     </Grid>
 </UserControl>
