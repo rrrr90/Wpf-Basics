@@ -25,9 +25,22 @@
         </Style>
 
         <ControlTemplate x:Key="CustomComboItem"
-                         TargetType="ComboBoxItem">
-            <TextBlock Text="{Binding Value}"
+                         TargetType="{x:Type ComboBoxItem}">
+            <TextBlock x:Name="txtBlock"
+                       Text="{Binding Value}"
                        Foreground="{Binding Brush}"/>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsHighlighted" Value="True">
+                    <Setter TargetName="txtBlock"
+                            Property="Background" 
+                            Value="LightSkyBlue"/>
+                </Trigger>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter TargetName="txtBlock"
+                            Property="Background"
+                            Value="DeepSkyBlue"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
         </ControlTemplate>
     </UserControl.Resources>
     <Grid>

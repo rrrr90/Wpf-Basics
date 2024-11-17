@@ -24,6 +24,6 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <ContentControl Grid.Column="0"
-                        Content="{Binding PropertyTriggerViewModel}"/>
+                        Content="{Binding ControlTemplateViewModel}"/>
     </Grid>
 </Window>
