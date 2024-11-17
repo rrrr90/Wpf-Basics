@@ -10,6 +10,9 @@
     <Compile Update="ControlTemplateView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PropertyTriggerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="StudentSheetView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,6 +22,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PropertyTriggerView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="StudentSheetView.xaml">
