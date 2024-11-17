@@ -22,11 +22,8 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <ContentControl Grid.Column="0"
-                        Content="{Binding ControlTemplateViewModel}"/>
-        <ContentControl Grid.Column="1"
-                        Content="{Binding StudentSheetViewModel}"/>
+                        Content="{Binding PropertyTriggerViewModel}"/>
     </Grid>
 </Window>
