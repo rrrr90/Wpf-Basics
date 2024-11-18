@@ -20,6 +20,20 @@
             <Setter Property="Padding" Value="20"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding TextProperty}" Value="Red">
+                    <Setter Property="Background" Value="Red"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding TextProperty}" Value="Orange">
+                    <Setter Property="Background" Value="Orange"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding TextProperty}" Value="Green">
+                    <Setter Property="Background" Value="Green"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </DataTrigger>
+            </Style.Triggers>
         </Style>
     </UserControl.Resources>
     <Grid>
@@ -29,7 +43,7 @@
         </Grid.ColumnDefinitions>
 
         <TextBox Grid.Column="0"
-                 Text="{Binding TextProperty}"
+                 Text="{Binding TextProperty, UpdateSourceTrigger=PropertyChanged}"
                  Style="{StaticResource TextBoxStyle}"/>
         <TextBlock Grid.Column="1"
                    Text="Red / Orange / Green"
