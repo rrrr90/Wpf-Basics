@@ -21,12 +21,15 @@
         <DataTemplate DataType="{x:Type vm:EventTriggerViewModel}">
             <local:EventTriggerView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:DataTriggerViewModel}">
+            <local:DataTriggerView/>
+        </DataTemplate>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <ContentControl Grid.Column="0"
-                        Content="{Binding EventTriggerViewModel}"/>
+                        Content="{Binding DataTriggerViewModel}"/>
     </Grid>
 </Window>

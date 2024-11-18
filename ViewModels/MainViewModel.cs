@@ -13,6 +13,7 @@ namespace Wpf_Basics.ViewModels
         public ControlTemplateViewModel ControlTemplateViewModel { get; set; }
         public PropertyTriggerViewModel PropertyTriggerViewModel { get; set; }
         public EventTriggerViewModel EventTriggerViewModel { get; set; }
+        public DataTriggerViewModel DataTriggerViewModel { get; set; }
 
         public MainViewModel()
         {
@@ -20,6 +21,7 @@ namespace Wpf_Basics.ViewModels
             ControlTemplateViewModel = new ControlTemplateViewModel();
             PropertyTriggerViewModel = new PropertyTriggerViewModel();
             EventTriggerViewModel = new EventTriggerViewModel();
+            DataTriggerViewModel = new DataTriggerViewModel();
         }
     }
 }
