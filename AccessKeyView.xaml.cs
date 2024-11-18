@@ -28,7 +28,7 @@ namespace Wpf_Basics
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Click");
         }
     }
 }

@@ -21,23 +21,23 @@
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" Grid.Column="0"
-               Content="Email:"/>
+               Content="_Email:"/>
         <TextBox Grid.Row="0" Grid.Column="1"/>
 
         <Label Grid.Row="1" Grid.Column="0"
-               Content="Name:"/>
+               Content="_Name:"/>
         <TextBox Grid.Row="1" Grid.Column="1"/>
 
         <Label Grid.Row="2" Grid.Column="0"
-               Content="Gender:"/>
+               Content="_Gender:"/>
         <TextBox Grid.Row="2" Grid.Column="1"/>
 
         <Label Grid.Row="3" Grid.Column="0"
-               Content="Phone:"/>
+               Content="_Phone:"/>
         <TextBox Grid.Row="3" Grid.Column="1"/>
 
         <Button Grid.Row="4" Grid.ColumnSpan="2"
-                Content="Save"
+                Content="_Save"
                 Click="Button_Click"/>
     </Grid>
 </UserControl>
