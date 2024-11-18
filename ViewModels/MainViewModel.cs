@@ -12,12 +12,14 @@ namespace Wpf_Basics.ViewModels
         public StudentSheetViewModel StudentSheetViewModel { get; set; }
         public ControlTemplateViewModel ControlTemplateViewModel { get; set; }
         public PropertyTriggerViewModel PropertyTriggerViewModel { get; set; }
+        public EventTriggerViewModel EventTriggerViewModel { get; set; }
 
         public MainViewModel()
         {
             StudentSheetViewModel = new StudentSheetViewModel();
             ControlTemplateViewModel = new ControlTemplateViewModel();
             PropertyTriggerViewModel = new PropertyTriggerViewModel();
+            EventTriggerViewModel = new EventTriggerViewModel();
         }
     }
 }
