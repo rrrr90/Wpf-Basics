@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AccessKeyView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ControlTemplateView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -24,6 +27,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AccessKeyView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ControlTemplateView.xaml">
       <SubType>Designer</SubType>
     </Page>
