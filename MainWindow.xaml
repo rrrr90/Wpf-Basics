@@ -24,12 +24,15 @@
         <DataTemplate DataType="{x:Type vm:DataTriggerViewModel}">
             <local:DataTriggerView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:AccessKeyViewModel}">
+            <local:AccessKeyView/>
+        </DataTemplate>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <ContentControl Grid.Column="0"
-                        Content="{Binding DataTriggerViewModel}"/>
+                        Content="{Binding AccessKeyViewModel}"/>
     </Grid>
 </Window>
