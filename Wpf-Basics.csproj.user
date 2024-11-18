@@ -10,6 +10,9 @@
     <Compile Update="ControlTemplateView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="DataTriggerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="EventTriggerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +25,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="ControlTemplateView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataTriggerView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="EventTriggerView.xaml">
