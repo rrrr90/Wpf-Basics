@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="Wpf_Basics.EventTriggerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wpf_Basics"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style x:Key="TextBoxTriggerStyle" TargetType="{x:Type TextBox}">
+            <Setter Property="Control.Padding" Value="10"/>
+            <Setter Property="Control.Margin" Value="5"/>
+        </Style>
+        <Style x:Key="ButtonTriggerStyle" TargetType="{x:Type Button}">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBox Style="{StaticResource TextBoxTriggerStyle}"/>
+            <TextBox Style="{StaticResource TextBoxTriggerStyle}"/>
+            <TextBox Style="{StaticResource TextBoxTriggerStyle}"/>
+            <TextBox Style="{StaticResource TextBoxTriggerStyle}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="A" Style="{StaticResource ButtonTriggerStyle}"/>
+            <Button Content="B" Style="{StaticResource ButtonTriggerStyle}"/>
+            <Button Content="C" Style="{StaticResource ButtonTriggerStyle}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
