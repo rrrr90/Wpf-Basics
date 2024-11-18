@@ -8,5 +8,7 @@ namespace Wpf_Basics.ViewModels
 {
     class DataTriggerViewModel : Bases.ViewModelBase
     {
+        public string TextProperty { get; set; } = default!;
+        public DataTriggerViewModel() { }
     }
 }

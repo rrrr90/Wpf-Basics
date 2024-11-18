@@ -23,6 +23,16 @@
         </Style>
     </UserControl.Resources>
     <Grid>
-            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox Grid.Column="0"
+                 Text="{Binding TextProperty}"
+                 Style="{StaticResource TextBoxStyle}"/>
+        <TextBlock Grid.Column="1"
+                   Text="Red / Orange / Green"
+                   Style="{StaticResource TextBlockStyle}"/>
     </Grid>
 </UserControl>
