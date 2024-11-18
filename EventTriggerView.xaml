@@ -10,6 +10,26 @@
         <Style x:Key="TextBoxTriggerStyle" TargetType="{x:Type TextBox}">
             <Setter Property="Control.Padding" Value="10"/>
             <Setter Property="Control.Margin" Value="5"/>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="GotFocus">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Duration="0:0:0.2"
+                                            Storyboard.TargetProperty="Background.Color"
+                                            To="Beige"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="LostFocus">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Duration="0:0:0.2"
+                                            Storyboard.TargetProperty="Background.Color"
+                                            To="White"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
         </Style>
         <Style x:Key="ButtonTriggerStyle" TargetType="{x:Type Button}">
             <Setter Property="Width" Value="100"/>
