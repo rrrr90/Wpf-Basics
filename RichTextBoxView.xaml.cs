@@ -24,6 +24,9 @@ namespace Wpf_Basics
         {
             InitializeComponent();
             this.DataContext = new ViewModels.RichTextBoxViewModel();
+
+            TextRange range = new TextRange(richTextBox1.Document.ContentStart, richTextBox1.Document.ContentEnd);
+            range.Text = "123";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
