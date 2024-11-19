@@ -43,5 +43,11 @@ namespace Wpf_Basics
 
             richTextBox1.Document = doc;
         }
+
+        private void Bold_Click(object sender, RoutedEventArgs e)
+        {
+            TextRange range = richTextBox1.Selection;
+            range.ApplyPropertyValue(TextElement.FontWeightProperty, FontWeights.Bold);
+        }
     }
 }
