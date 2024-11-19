@@ -27,12 +27,15 @@
         <DataTemplate DataType="{x:Type vm:AccessKeyViewModel}">
             <local:AccessKeyView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:RichTextBoxViewModel}">
+            <local:RichTextBoxView/>
+        </DataTemplate>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <ContentControl Grid.Column="0"
-                        Content="{Binding AccessKeyViewModel}"/>
+                        Content="{Binding RichTextBoxViewModel}"/>
     </Grid>
 </Window>

@@ -15,6 +15,7 @@ namespace Wpf_Basics.ViewModels
         public EventTriggerViewModel EventTriggerViewModel { get; set; }
         public DataTriggerViewModel DataTriggerViewModel { get; set; }
         public AccessKeyViewModel AccessKeyViewModel { get; set; }
+        public RichTextBoxViewModel RichTextBoxViewModel { get; set; }
 
         public MainViewModel()
         {
@@ -24,6 +25,7 @@ namespace Wpf_Basics.ViewModels
             EventTriggerViewModel = new EventTriggerViewModel();
             DataTriggerViewModel = new DataTriggerViewModel();
             AccessKeyViewModel = new AccessKeyViewModel();
+            RichTextBoxViewModel = new RichTextBoxViewModel();
         }
     }
 }
