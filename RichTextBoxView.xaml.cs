@@ -25,5 +25,20 @@ namespace Wpf_Basics
             InitializeComponent();
             this.DataContext = new ViewModels.RichTextBoxViewModel();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Paragraph pargs = new Paragraph();
+            Run run1 = new Run() { Text = "ABCD" };
+            Run run2 = new Run() { Text = "1234", FontWeight= FontWeights.Bold };
+            Run run3 = new Run() { Text = "!@#$" };
+            pargs.Inlines.Add(run1);
+            pargs.Inlines.Add(run2);
+            pargs.Inlines.Add(run3);
+            FlowDocument doc = new FlowDocument();
+            doc.Blocks.Add(pargs);
+
+            richTextBox1.Document = doc;
+        }
     }
 }
