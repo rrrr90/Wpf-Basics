@@ -6,7 +6,60 @@
              xmlns:local="clr-namespace:Wpf_Basics"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style x:Key="ControlBase" TargetType="{x:Type Control}">
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+        <Style TargetType="{x:Type Button}" BasedOn="{StaticResource ControlBase}">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="{x:Type RichTextBox}" BasedOn="{StaticResource ControlBase}">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </UserControl.Resources>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.ColumnSpan="2" Orientation="Horizontal">
+            <Button Content="Test" Background="LightSkyBlue"/>
+            <Button Content="Bold"/>
+            <Button Content="Italic"/>
+            <Button Content="Underline"/>
+            <Button Content="Strikethrough"/>
+            <Button Content="FontSize"/>
+            <Button Content="FontFamily"/>
+            <Button Content="Color"/>
+            <Button Content="CaretBrush"/>
+            <Button Content="Image"/>
+            <Button Content="RTF Export"/>
+            <Button Content="RTF Import"/>
+            <Image Name="img"
+                   Source="D:\Picture\인장주작은뭐야.jpg"
+                   Height="50" Width="50"/>
+        </StackPanel>
+
+        <RichTextBox Grid.Row="1" Grid.Column="0"
+                     x:Name="richTextBox1"
+                     BorderBrush="Blue">
+            <RichTextBox.Resources>
+                <Style TargetType="{x:Type Paragraph}">
+                    <Setter Property="LineHeight" Value="1"/>
+                </Style>
+            </RichTextBox.Resources>
+        </RichTextBox>
+
+        <RichTextBox Grid.Row="1" Grid.Column="1"
+                     x:Name="richTextBox2"
+                     BorderBrush="Red">
             
+        </RichTextBox>
     </Grid>
 </UserControl>
