@@ -59,7 +59,13 @@
         <RichTextBox Grid.Row="1" Grid.Column="1"
                      x:Name="richTextBox2"
                      BorderBrush="Red">
-            
+            <FlowDocument>
+                <Paragraph>
+                    <Run>ABC</Run>
+                    <Run FontWeight="Bold">123</Run>
+                    <Run>!@#</Run><Run>!@#</Run>
+                </Paragraph>
+            </FlowDocument>
         </RichTextBox>
     </Grid>
 </UserControl>
