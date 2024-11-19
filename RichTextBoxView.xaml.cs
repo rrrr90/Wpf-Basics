@@ -46,16 +46,22 @@ namespace Wpf_Basics
 
         private void Bold_Click(object sender, RoutedEventArgs e)
         {
-            TextRange range = richTextBox1.Selection;
+            TogglePropertyValue(richTextBox1, TextElement.FontWeightProperty, FontWeights.Bold, FontWeights.Normal);
+        }
 
-            FontWeight? fontweight = range.GetPropertyValue(TextElement.FontWeightProperty) as FontWeight?;
-            if (fontweight == FontWeights.Bold)
+        private void TogglePropertyValue(RichTextBox richtextbox, DependencyProperty property, object set, object unset)
+        {
+            TextRange range = richtextbox.Selection;
+            if (range.IsEmpty) return;
+
+            object cur = range.GetPropertyValue(property);
+            if(cur.GetHashCode() == set.GetHashCode())
             {
-                range.ApplyPropertyValue(TextElement.FontWeightProperty, FontWeights.Normal);
+                range.ApplyPropertyValue(property, unset);
             }
             else
             {
-                range.ApplyPropertyValue(TextElement.FontWeightProperty, FontWeights.Bold);
+                range.ApplyPropertyValue(property, set);
             }
         }
     }
