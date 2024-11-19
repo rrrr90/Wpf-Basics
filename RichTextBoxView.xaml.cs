@@ -47,7 +47,16 @@ namespace Wpf_Basics
         private void Bold_Click(object sender, RoutedEventArgs e)
         {
             TextRange range = richTextBox1.Selection;
-            range.ApplyPropertyValue(TextElement.FontWeightProperty, FontWeights.Bold);
+
+            FontWeight? fontweight = range.GetPropertyValue(TextElement.FontWeightProperty) as FontWeight?;
+            if (fontweight == FontWeights.Bold)
+            {
+                range.ApplyPropertyValue(TextElement.FontWeightProperty, FontWeights.Normal);
+            }
+            else
+            {
+                range.ApplyPropertyValue(TextElement.FontWeightProperty, FontWeights.Bold);
+            }
         }
     }
 }
