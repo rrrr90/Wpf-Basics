@@ -33,7 +33,7 @@
         <Label Grid.Row="2" Grid.Column="0" Content="Password Box"/>
 
         <TextBox Grid.Row="1" Grid.Column="1"
-                 Text="{Binding InputText}"/>
+                 Text="{Binding InputText, UpdateSourceTrigger=PropertyChanged}"/>
         <TextBox Grid.Row="1" Grid.Column="2"
                  Text="{Binding OutputText}"/>
 
