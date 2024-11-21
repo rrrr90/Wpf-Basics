@@ -30,12 +30,15 @@
         <DataTemplate DataType="{x:Type vm:RichTextBoxViewModel}">
             <local:RichTextBoxView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:AttachedPropertyViewModel}">
+            <local:AttachedPropertyView/>
+        </DataTemplate>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <ContentControl Grid.Column="0"
-                        Content="{Binding RichTextBoxViewModel}"/>
+                        Content="{Binding AttachedPropertyViewModel}"/>
     </Grid>
 </Window>
