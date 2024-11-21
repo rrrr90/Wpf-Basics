@@ -40,8 +40,10 @@
                  Text="{Binding OutputText}"/>
 
         <PasswordBox Grid.Row="2" Grid.Column="1"
+                     utils:PasswordPropertyHelper.BoundPassword="{Binding InputPassword, Mode=TwoWay}"
                      Background="#FFFFD7D7"/>
         <TextBox Grid.Row="2" Grid.Column="2"
+                 Text="{Binding OutputPassword}"
                  Background="#FFFFD7D7"/>
     </Grid>
 </UserControl>
