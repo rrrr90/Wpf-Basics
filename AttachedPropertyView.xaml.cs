@@ -25,12 +25,5 @@ namespace Wpf_Basics
             InitializeComponent();
             this.DataContext = new ViewModels.AttachedPropertyViewModel();
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            TextBox? textBox = sender as TextBox;
-            BindingExpression? bindingExpression = textBox?.GetBindingExpression(TextBox.TextProperty);
-            bindingExpression?.UpdateSource();
-        }
     }
 }

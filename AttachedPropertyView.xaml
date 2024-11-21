@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Wpf_Basics"
+             xmlns:utils="clr-namespace:Wpf_Basics.Utils"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
@@ -34,7 +35,7 @@
 
         <TextBox Grid.Row="1" Grid.Column="1"
                  Text="{Binding InputText}"
-                 TextChanged="TextBox_TextChanged"/>
+                 utils:TextBoxHelper.UseOnPropertyChanged="True"/>
         <TextBox Grid.Row="1" Grid.Column="2"
                  Text="{Binding OutputText}"/>
 
