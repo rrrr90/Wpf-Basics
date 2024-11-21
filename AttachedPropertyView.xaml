@@ -6,7 +6,38 @@
              xmlns:local="clr-namespace:Wpf_Basics"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Background" Value="AliceBlue"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </UserControl.Resources>
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="1" Content="입력"/>
+        <Label Grid.Row="0" Grid.Column="2" Content="Binding Property"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Text Box"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Password Box"/>
+
+        <TextBox Grid.Row="1" Grid.Column="1"/>
+        <TextBox Grid.Row="1" Grid.Column="2"/>
+
+        <PasswordBox Grid.Row="2" Grid.Column="1"
+                     Background="#FFFFD7D7"/>
+        <TextBox Grid.Row="2" Grid.Column="2"
+                 Background="#FFFFD7D7"/>
     </Grid>
 </UserControl>
