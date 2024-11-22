@@ -17,6 +17,7 @@ namespace Wpf_Basics.ViewModels
         public AccessKeyViewModel AccessKeyViewModel { get; set; }
         public RichTextBoxViewModel RichTextBoxViewModel { get; set; }
         public AttachedPropertyViewModel AttachedPropertyViewModel { get; set; }
+        public UserControlViewModel UserControlViewModel { get; set; }
 
         public MainViewModel()
         {
@@ -28,6 +29,7 @@ namespace Wpf_Basics.ViewModels
             AccessKeyViewModel = new AccessKeyViewModel();
             RichTextBoxViewModel = new RichTextBoxViewModel();
             AttachedPropertyViewModel = new AttachedPropertyViewModel();
+            UserControlViewModel = new UserControlViewModel();
         }
     }
 }
