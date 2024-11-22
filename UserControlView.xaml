@@ -4,9 +4,18 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Wpf_Basics"
+             xmlns:wpfcontrols="clr-namespace:WpfControls;assembly=WpfControls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+    <StackPanel>
+        <wpfcontrols:MyRadioButton>
+            <TextBlock Text="1111"/>
+        </wpfcontrols:MyRadioButton>
+        <wpfcontrols:MyRadioButton>
+            <TextBlock Text="2222"/>
+        </wpfcontrols:MyRadioButton>
+        <wpfcontrols:MyRadioButton>
+            <TextBlock Text="3333"/>
+        </wpfcontrols:MyRadioButton>
+    </StackPanel>
 </UserControl>
