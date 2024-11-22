@@ -16,6 +16,7 @@ namespace Wpf_Basics.ViewModels
         public DataTriggerViewModel DataTriggerViewModel { get; set; }
         public AccessKeyViewModel AccessKeyViewModel { get; set; }
         public RichTextBoxViewModel RichTextBoxViewModel { get; set; }
+        public AttachedPropertyViewModel AttachedPropertyViewModel { get; set; }
 
         public MainViewModel()
         {
@@ -26,6 +27,7 @@ namespace Wpf_Basics.ViewModels
             DataTriggerViewModel = new DataTriggerViewModel();
             AccessKeyViewModel = new AccessKeyViewModel();
             RichTextBoxViewModel = new RichTextBoxViewModel();
+            AttachedPropertyViewModel = new AttachedPropertyViewModel();
         }
     }
 }
