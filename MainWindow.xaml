@@ -33,12 +33,15 @@
         <DataTemplate DataType="{x:Type vm:AttachedPropertyViewModel}">
             <local:AttachedPropertyView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:UserControlViewModel}">
+            <local:UserControlView/>
+        </DataTemplate>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <ContentControl Grid.Column="0"
-                        Content="{Binding AttachedPropertyViewModel}"/>
+                        Content="{Binding UserControlViewModel}"/>
     </Grid>
 </Window>
