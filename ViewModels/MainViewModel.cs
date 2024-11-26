@@ -1,14 +1,19 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.Input;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Wpf_Basics.Models;
+using Wpf_Basics.Services;
 
 namespace Wpf_Basics.ViewModels
 {
     internal class MainViewModel: Bases.ViewModelBase
     {
+        private readonly IViewService _viewService;
+
         public StudentSheetViewModel StudentSheetViewModel { get; set; }
         public ControlTemplateViewModel ControlTemplateViewModel { get; set; }
         public PropertyTriggerViewModel PropertyTriggerViewModel { get; set; }
@@ -21,7 +26,7 @@ namespace Wpf_Basics.ViewModels
 
         public SubData SubData { get; set; } = default!;
 
-        public MainViewModel()
+        public MainViewModel(IViewService viewService)
         {
             StudentSheetViewModel = new StudentSheetViewModel();
             ControlTemplateViewModel = new ControlTemplateViewModel();
@@ -32,6 +37,14 @@ namespace Wpf_Basics.ViewModels
             RichTextBoxViewModel = new RichTextBoxViewModel();
             AttachedPropertyViewModel = new AttachedPropertyViewModel();
             UserControlViewModel = new UserControlViewModel();
+            _viewService = viewService;
+        }
+
+        public ICommand ShowSubWindowCommand => new RelayCommand<object>(ShowSubWindow);
+
+        private void ShowSubWindow(object? obj)
+        {
+            _viewService.ShowSubView(SubData);
         }
     }
 }

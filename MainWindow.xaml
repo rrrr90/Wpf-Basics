@@ -46,7 +46,8 @@
             <TextBox FontSize="30" Text="{Binding SubData.Data2}" Margin="10"/>
             <Button Content="Show View"
                     FontSize="30"
-                    Margin="10"/>
+                    Margin="10"
+                    Command="{Binding ShowSubWindowCommand}"/>
         </StackPanel>
         <!--ContentControl Grid.Column="0" Content="{Binding UserControlViewModel}"/-->
     </Grid>

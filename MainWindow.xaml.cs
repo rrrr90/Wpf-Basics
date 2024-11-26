@@ -19,7 +19,6 @@ namespace Wpf_Basics
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new ViewModels.MainViewModel();
         }
     }
 }
