@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="SubWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <TextBlock Text="{Binding SubData.Data1}"
+                       FontSize="35"
+                       Margin="10"/>
+            <TextBlock Text="{Binding SubData.Data2}"
+                       FontSize="35"
+                       Margin="10"/>
+        </StackPanel>
     </Grid>
 </Window>

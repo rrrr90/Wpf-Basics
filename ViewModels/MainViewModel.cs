@@ -24,7 +24,24 @@ namespace Wpf_Basics.ViewModels
         public AttachedPropertyViewModel AttachedPropertyViewModel { get; set; }
         public UserControlViewModel UserControlViewModel { get; set; }
 
-        public SubData SubData { get; set; } = default!;
+        private string _data1 = string.Empty;
+        private string _data2 = string.Empty;
+        public string Data1
+        {
+            get => _data1;
+            set
+            {
+                SetProperty(ref _data1, value);
+            }
+        }
+        public string Data2
+        {
+            get => _data2;
+            set
+            {
+                SetProperty(ref _data2, value);
+            }
+        }
 
         public MainViewModel(IViewService viewService)
         {
@@ -44,7 +61,7 @@ namespace Wpf_Basics.ViewModels
 
         private void ShowSubWindow(object? obj)
         {
-            _viewService.ShowSubView(SubData);
+            _viewService.ShowSubView(new SubData() { Data1 = _data1, Data2 = _data2 });
         }
     }
 }
