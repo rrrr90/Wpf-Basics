@@ -16,9 +16,17 @@ namespace Wpf_Basics
         private IServiceProvider ConfigurationService()
         {
             IServiceCollection services = new ServiceCollection();
+            // Views
             services.AddSingleton<MainWindow>();
+            services.AddTransient<SubWindow>();
+
+            // Serivces
             services.AddSingleton<IViewService, ViewService>();
+
+            // ViewModels
             services.AddSingleton<ViewModels.MainViewModel>();
+            services.AddTransient<ViewModels.SubViewModel>();
+
             return services.BuildServiceProvider();
         }
 

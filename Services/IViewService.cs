@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Wpf_Basics.Models;
 
 namespace Wpf_Basics.Services
 {
@@ -15,5 +16,7 @@ namespace Wpf_Basics.Services
             where TViewModel : INotifyPropertyChanged;
 
         void ShowView();
+
+        void ShowSubView(SubData subdata);
     }
 }
