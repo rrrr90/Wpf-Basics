@@ -19,6 +19,8 @@ namespace Wpf_Basics.ViewModels
         public AttachedPropertyViewModel AttachedPropertyViewModel { get; set; }
         public UserControlViewModel UserControlViewModel { get; set; }
 
+        public SubData SubData { get; set; } = default!;
+
         public MainViewModel()
         {
             StudentSheetViewModel = new StudentSheetViewModel();
