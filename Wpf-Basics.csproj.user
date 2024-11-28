@@ -31,6 +31,9 @@
     <Compile Update="StudentSheetView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="SubWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControlView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -61,6 +64,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="StudentSheetView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SubWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControlView.xaml">

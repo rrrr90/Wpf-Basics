@@ -1,6 +1,8 @@
-﻿using System.Configuration;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System.Configuration;
 using System.Data;
 using System.Windows;
+using Wpf_Basics.Services;
 
 namespace Wpf_Basics
 {
@@ -9,6 +11,37 @@ namespace Wpf_Basics
     /// </summary>
     public partial class App : Application
     {
+        private IServiceProvider _services = default!;
+
+        private IServiceProvider ConfigurationService()
+        {
+            IServiceCollection services = new ServiceCollection();
+            // Views
+            services.AddSingleton<MainWindow>();
+            services.AddTransient<SubWindow>();
+
+            // Serivces
+            services.AddSingleton<IViewService, ViewService>();
+
+            // ViewModels
+            services.AddSingleton<ViewModels.MainViewModel>();
+            services.AddTransient<ViewModels.SubViewModel>();
+
+            return services.BuildServiceProvider();
+        }
+
+        public App()
+        {
+            _services = ConfigurationService();
+        }
+
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+
+            var viewService = (IViewService?)_services.GetService(typeof(IViewService));
+            viewService.ShowView();
+        }
     }
 
 }
