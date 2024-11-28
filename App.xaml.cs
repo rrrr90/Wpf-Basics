@@ -11,9 +11,9 @@ namespace Wpf_Basics
     /// </summary>
     public partial class App : Application
     {
-        private IServiceProvider _services = default!;
+        private readonly ServiceProvider _services;
 
-        private IServiceProvider ConfigurationService()
+        private static ServiceProvider ConfigurationService()
         {
             IServiceCollection services = new ServiceCollection();
             // Views
@@ -40,7 +40,7 @@ namespace Wpf_Basics
             base.OnStartup(e);
 
             var viewService = (IViewService?)_services.GetService(typeof(IViewService));
-            viewService.ShowView();
+            viewService?.ShowView();
         }
     }
 

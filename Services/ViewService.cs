@@ -11,19 +11,16 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Wpf_Basics.Services
 {
-    public class ViewService : IViewService
+    public class ViewService(IServiceProvider serviceProvider) : IViewService
     {
-        IServiceProvider _serviceProvider;
-        public ViewService(IServiceProvider serviceProvider)
-        {
-            _serviceProvider = serviceProvider;
-        }
+        private readonly IServiceProvider _serviceProvider = serviceProvider;
+
         public void ShowView<TView, TViewModel>(object? parameter = null)
             where TView : Window
             where TViewModel : INotifyPropertyChanged
         {
             var viewModel = (INotifyPropertyChanged?)_serviceProvider.GetService(typeof(TViewModel));
-            var view = (Window?)_serviceProvider.GetService(typeof(TView));
+            var view = (Window?)_serviceProvider.GetService(typeof(TView))!;
 
             if(parameter != null && viewModel is IParameterReceiver parameterReceiver)
             {
