@@ -7,69 +7,69 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="AccessKeyView.xaml.cs">
+    <Compile Update="Views\AccessKeyView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="AttachedPropertyView.xaml.cs">
+    <Compile Update="Views\AttachedPropertyView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ControlTemplateView.xaml.cs">
+    <Compile Update="Views\ControlTemplateView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="DataTriggerView.xaml.cs">
+    <Compile Update="Views\DataTriggerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="EventTriggerView.xaml.cs">
+    <Compile Update="Views\EventTriggerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="PropertyTriggerView.xaml.cs">
+    <Compile Update="Views\PropertyTriggerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="RichTextBoxView.xaml.cs">
+    <Compile Update="Views\RichTextBoxView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="StudentSheetView.xaml.cs">
+    <Compile Update="Views\StudentSheetView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="SubWindow.xaml.cs">
+    <Compile Update="Views\SubWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControlView.xaml.cs">
+    <Compile Update="Views\UserControlView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="AccessKeyView.xaml">
+    <Page Update="Views\AccessKeyView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="AttachedPropertyView.xaml">
+    <Page Update="Views\AttachedPropertyView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ControlTemplateView.xaml">
+    <Page Update="Views\ControlTemplateView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="DataTriggerView.xaml">
+    <Page Update="Views\DataTriggerView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="EventTriggerView.xaml">
+    <Page Update="Views\EventTriggerView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="Views\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="PropertyTriggerView.xaml">
+    <Page Update="Views\PropertyTriggerView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="RichTextBoxView.xaml">
+    <Page Update="Views\RichTextBoxView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="StudentSheetView.xaml">
+    <Page Update="Views\StudentSheetView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="SubWindow.xaml">
+    <Page Update="Views\SubWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UserControlView.xaml">
+    <Page Update="Views\UserControlView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
