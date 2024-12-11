@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Wpf_Basics.Views;
 
 namespace Wpf_Basics
 {
@@ -23,7 +24,8 @@ namespace Wpf_Basics
 
         private void ShowDialog(object sender, RoutedEventArgs e)
         {
-            
+            var dialog = new OkCancelDialog("test title", "test message");
+            dialog.ShowDialog();
         }
     }
 }
