@@ -21,11 +21,5 @@ namespace Wpf_Basics
         {
             InitializeComponent();
         }
-
-        private void ShowDialog(object sender, RoutedEventArgs e)
-        {
-            var dialog = new OkCancelDialog("test title", "test message");
-            dialog.ShowDialog();
-        }
     }
 }

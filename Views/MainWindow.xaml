@@ -51,7 +51,7 @@
             <Button Content="Show Dialog"
                     FontSize="30"
                     Margin="10"
-                    Click="ShowDialog"/>
+                    Command="{Binding ShowDialogCommand}"/>
         </StackPanel>
         <!--ContentControl Grid.Column="0" Content="{Binding UserControlViewModel}"/-->
     </Grid>
