@@ -29,7 +29,7 @@
             <Button x:Name="btnCancel"
                     Grid.Column="1"
                     Content="Cancel"
-                    IsCancel="False"/>
+                    IsCancel="True"/>
         </Grid>
     </Grid>
 </Window>
