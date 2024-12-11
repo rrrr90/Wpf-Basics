@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 using Wpf_Basics.Models;
 using Wpf_Basics.Services;
@@ -69,8 +70,13 @@ namespace Wpf_Basics.ViewModels
 
         private void ShowDialog(object? obj)
         {
-            var dialog = new OkCancelDialog("test title", "test message");
-            dialog.ShowDialog();
+            var dialogVm = new OkCancelDialogViewModel();
+            var dialog = new OkCancelDialog
+            {
+                DataContext = dialogVm
+            };
+            bool? result = dialog.ShowDialog();
+            MessageBox.Show(result.ToString());
         }
     }
 }

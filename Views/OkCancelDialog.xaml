@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Basics.Views"
         mc:Ignorable="d"
+        x:Name="root"
         Title="OkCancelDialog" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
@@ -25,7 +26,8 @@
                     Grid.Column="0"
                     Content="OK"
                     IsDefault="True"
-                    Click="ClickButtonOk"/>
+                    Command="{Binding OkCommand}"
+                    CommandParameter="{Binding ElementName=root}"/>
             <Button x:Name="btnCancel"
                     Grid.Column="1"
                     Content="Cancel"

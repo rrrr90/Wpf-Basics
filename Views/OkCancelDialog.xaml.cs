@@ -19,17 +19,17 @@ namespace Wpf_Basics.Views
     /// </summary>
     public partial class OkCancelDialog : Window
     {
+        public OkCancelDialog()
+        {
+            InitializeComponent();
+        }
+
         public OkCancelDialog(string title, string message)
         {
             InitializeComponent();
 
             this.Title = title;
             this.tbMessage.Text = message;
-        }
-
-        private void ClickButtonOk(object sender, RoutedEventArgs e)
-        {
-            DialogResult = true;
         }
     }
 }
