@@ -38,7 +38,22 @@ namespace Wpf_Basics.Services
 
         public void ShowSubView(SubData subdata)
         {
-            ShowView<SubWindow, SubViewModel>(subdata);
+            if (!ActivateWindow<SubWindow>())
+            {
+                ShowView<SubWindow, SubViewModel>(subdata);
+            }
+        }
+
+        private bool ActivateWindow<TView>()
+            where TView : Window
+        {
+            var subWindows = Application.Current.Windows.OfType<TView>();
+            if (subWindows.Any())
+            {
+                subWindows.ElementAt(0).Activate();
+                return true;
+            }
+            return false;
         }
     }
 }
