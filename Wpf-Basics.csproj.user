@@ -22,6 +22,9 @@
     <Compile Update="Views\EventTriggerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\OkCancelDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\PropertyTriggerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\OkCancelDialog.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\PropertyTriggerView.xaml">

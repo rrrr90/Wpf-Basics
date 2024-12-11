@@ -48,6 +48,10 @@
                     FontSize="30"
                     Margin="10"
                     Command="{Binding ShowSubWindowCommand}"/>
+            <Button Content="Show Dialog"
+                    FontSize="30"
+                    Margin="10"
+                    Click="ShowDialog"/>
         </StackPanel>
         <!--ContentControl Grid.Column="0" Content="{Binding UserControlViewModel}"/-->
     </Grid>
