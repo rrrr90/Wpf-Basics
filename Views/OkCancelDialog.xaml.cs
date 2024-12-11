@@ -26,5 +26,10 @@ namespace Wpf_Basics.Views
             this.Title = title;
             this.tbMessage.Text = message;
         }
+
+        private void ClickButtonOk(object sender, RoutedEventArgs e)
+        {
+            DialogResult = true;
+        }
     }
 }

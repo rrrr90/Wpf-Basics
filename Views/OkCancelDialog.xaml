@@ -24,7 +24,8 @@
             <Button x:Name="btnOk"
                     Grid.Column="0"
                     Content="OK"
-                    IsDefault="True"/>
+                    IsDefault="True"
+                    Click="ClickButtonOk"/>
             <Button x:Name="btnCancel"
                     Grid.Column="1"
                     Content="Cancel"
