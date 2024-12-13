@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 using Wpf_Basics.Models;
 using Wpf_Basics.Services;
+using Wpf_Basics.Views;
 
 namespace Wpf_Basics.ViewModels
 {
@@ -59,9 +61,22 @@ namespace Wpf_Basics.ViewModels
 
         public ICommand ShowSubWindowCommand => new RelayCommand<object>(ShowSubWindow);
 
+        public ICommand ShowDialogCommand => new RelayCommand<object>(ShowDialog);
+
         private void ShowSubWindow(object? obj)
         {
             _viewService.ShowSubView(new SubData() { Data1 = _data1, Data2 = _data2 });
+        }
+
+        private void ShowDialog(object? obj)
+        {
+            var dialogVm = new OkCancelDialogViewModel();
+            var dialog = new OkCancelDialog
+            {
+                DataContext = dialogVm
+            };
+            bool? result = dialog.ShowDialog();
+            MessageBox.Show(result.ToString());
         }
     }
 }
